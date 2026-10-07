@@ -1,0 +1,3357 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Happy 23rd Birthday Mamas 🎂
+    </title>
+
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+
+        /* ==================================================
+           RESET
+        ================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family:
+                'Baloo 2',
+                cursive;
+
+            background:
+                #fff8fb;
+
+            color:
+                #614e5c;
+
+            overflow-x: hidden;
+
+        }
+
+
+        /* ==================================================
+           COLORS
+        ================================================== */
+
+        :root {
+
+            --pink:
+                #f6b8ca;
+
+            --pink-dark:
+                #df829e;
+
+            --pink-soft:
+                #ffe4ed;
+
+            --purple:
+                #c9b1df;
+
+            --purple-dark:
+                #9b78b5;
+
+            --cream:
+                #fff7df;
+
+            --yellow:
+                #ffd978;
+
+            --blue:
+                #a9dced;
+
+            --green:
+                #b8dfc2;
+
+            --brown:
+                #765968;
+
+            --white:
+                #ffffff;
+
+        }
+
+
+        /* ==================================================
+           LOADER
+        ================================================== */
+
+        #loader {
+
+            position: fixed;
+
+            inset: 0;
+
+            background:
+                #fff8fb;
+
+            z-index: 99999;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-direction: column;
+
+            transition:
+                opacity .8s ease,
+                visibility .8s ease;
+
+        }
+
+
+        #loader.hide {
+
+            opacity: 0;
+
+            visibility: hidden;
+
+        }
+
+
+        .loader-cake {
+
+            font-size:
+                60px;
+
+            animation:
+                bounceCake
+                1s
+                infinite alternate;
+
+        }
+
+
+        .loader-text {
+
+            margin-top:
+                15px;
+
+            color:
+                var(--pink-dark);
+
+            font-weight:
+                700;
+
+        }
+
+
+        @keyframes bounceCake {
+
+            from {
+                transform:
+                    translateY(0)
+                    rotate(-4deg);
+            }
+
+            to {
+                transform:
+                    translateY(-15px)
+                    rotate(4deg);
+            }
+
+        }
+
+
+        /* ==================================================
+           FLOATING DECORATION
+        ================================================== */
+
+        .floating-decoration {
+
+            position:
+                fixed;
+
+            inset:
+                0;
+
+            pointer-events:
+                none;
+
+            z-index:
+                0;
+
+            overflow:
+                hidden;
+
+        }
+
+
+        .floating {
+
+            position:
+                absolute;
+
+            bottom:
+                -80px;
+
+            animation:
+                floatUp
+                linear
+                infinite;
+
+            opacity:
+                .55;
+
+        }
+
+
+        @keyframes floatUp {
+
+            0% {
+
+                transform:
+                    translateY(0)
+                    rotate(0);
+
+                opacity:
+                    0;
+
+            }
+
+            15% {
+
+                opacity:
+                    .55;
+
+            }
+
+            80% {
+
+                opacity:
+                    .55;
+
+            }
+
+            100% {
+
+                transform:
+                    translateY(-115vh)
+                    rotate(30deg);
+
+                opacity:
+                    0;
+
+            }
+
+        }
+
+
+        /* ==================================================
+           NAVBAR
+        ================================================== */
+
+        nav {
+
+            position:
+                fixed;
+
+            top:
+                0;
+
+            left:
+                0;
+
+            width:
+                100%;
+
+            padding:
+                13px 7%;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                center;
+
+            background:
+                rgba(255,255,255,.8);
+
+            backdrop-filter:
+                blur(15px);
+
+            z-index:
+                5000;
+
+            border-bottom:
+                2px dashed
+                rgba(223,130,158,.15);
+
+        }
+
+
+        .logo {
+
+            font-family:
+                'Fredoka',
+                sans-serif;
+
+            font-size:
+                21px;
+
+            color:
+                var(--pink-dark);
+
+            font-weight:
+                600;
+
+        }
+
+
+        .music-btn {
+
+            width:
+                43px;
+
+            height:
+                43px;
+
+            border:
+                none;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--pink-soft);
+
+            color:
+                var(--pink-dark);
+
+            cursor:
+                pointer;
+
+            font-size:
+                17px;
+
+            box-shadow:
+                0 5px 15px
+                rgba(200,100,130,.15);
+
+            transition:
+                .3s;
+
+        }
+
+
+        .music-btn:hover {
+
+            transform:
+                rotate(10deg)
+                scale(1.08);
+
+        }
+
+
+        /* ==================================================
+           HERO
+        ================================================== */
+
+        .hero {
+
+            min-height:
+                100vh;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            text-align:
+                center;
+
+            padding:
+                100px 20px;
+
+            background:
+
+                radial-gradient(
+                    circle at 20% 20%,
+                    #ffe2ec,
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 80% 30%,
+                    #eee0f8,
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    180deg,
+                    #fff9fb,
+                    #fff3f8
+                );
+
+        }
+
+
+        /* ==================================================
+           BALLOONS
+        ================================================== */
+
+        .balloon {
+
+            position:
+                absolute;
+
+            width:
+                70px;
+
+            height:
+                85px;
+
+            border-radius:
+                50% 50% 45% 45%;
+
+            animation:
+                balloonFloat
+                4s
+                ease-in-out
+                infinite;
+
+        }
+
+
+        .balloon::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            bottom:
+                -65px;
+
+            left:
+                50%;
+
+            width:
+                1px;
+
+            height:
+                70px;
+
+            background:
+                #a88c9d;
+
+        }
+
+
+        .balloon::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            bottom:
+                -5px;
+
+            left:
+                50%;
+
+            transform:
+                translateX(-50%);
+
+            border-left:
+                5px solid transparent;
+
+            border-right:
+                5px solid transparent;
+
+            border-top:
+                10px solid
+                currentColor;
+
+        }
+
+
+        .balloon-pink {
+
+            background:
+                var(--pink);
+
+            color:
+                var(--pink);
+
+            left:
+                7%;
+
+            top:
+                25%;
+
+        }
+
+
+        .balloon-purple {
+
+            background:
+                var(--purple);
+
+            color:
+                var(--purple);
+
+            right:
+                8%;
+
+            top:
+                20%;
+
+            animation-delay:
+                .7s;
+
+        }
+
+
+        .balloon-yellow {
+
+            background:
+                var(--yellow);
+
+            color:
+                var(--yellow);
+
+            left:
+                15%;
+
+            bottom:
+                18%;
+
+            animation-delay:
+                1.2s;
+
+        }
+
+
+        .balloon-blue {
+
+            background:
+                var(--blue);
+
+            color:
+                var(--blue);
+
+            right:
+                15%;
+
+            bottom:
+                17%;
+
+            animation-delay:
+                1.7s;
+
+        }
+
+
+        @keyframes balloonFloat {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    rotate(-4deg);
+
+            }
+
+            50% {
+
+                transform:
+                    translateY(-20px)
+                    rotate(5deg);
+
+            }
+
+        }
+
+
+        /* ==================================================
+           HERO CONTENT
+        ================================================== */
+
+        .hero-content {
+
+            position:
+                relative;
+
+            z-index:
+                10;
+
+            max-width:
+                850px;
+
+        }
+
+
+        .party-label {
+
+            display:
+                inline-block;
+
+            background:
+                white;
+
+            padding:
+                8px 20px;
+
+            border-radius:
+                50px;
+
+            color:
+                var(--pink-dark);
+
+            font-size:
+                13px;
+
+            font-weight:
+                600;
+
+            box-shadow:
+                0 7px 20px
+                rgba(120,70,100,.08);
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .hero h1 {
+
+            font-family:
+                'Fredoka',
+                sans-serif;
+
+            font-size:
+                clamp(48px,10vw,100px);
+
+            line-height:
+                .95;
+
+            color:
+                var(--pink-dark);
+
+            text-shadow:
+                3px 4px 0
+                #ffe0e9;
+
+        }
+
+
+        .hero h1 span {
+
+            display:
+                block;
+
+            font-size:
+                .55em;
+
+            color:
+                var(--purple-dark);
+
+            margin-top:
+                10px;
+
+        }
+
+
+        .hero-age {
+
+            display:
+                inline-block;
+
+            margin:
+                28px 0;
+
+            background:
+                var(--yellow);
+
+            padding:
+                8px 22px;
+
+            border-radius:
+                50px;
+
+            font-size:
+                18px;
+
+            font-weight:
+                700;
+
+            color:
+                #806328;
+
+            transform:
+                rotate(-2deg);
+
+        }
+
+
+        .hero-description {
+
+            max-width:
+                570px;
+
+            margin:
+                auto;
+
+            font-size:
+                15px;
+
+            line-height:
+                1.8;
+
+            color:
+                #786572;
+
+        }
+
+
+        .scroll-btn {
+
+            display:
+                inline-block;
+
+            margin-top:
+                35px;
+
+            text-decoration:
+                none;
+
+            color:
+                white;
+
+            background:
+                var(--pink-dark);
+
+            padding:
+                12px 25px;
+
+            border-radius:
+                50px;
+
+            font-weight:
+                600;
+
+            box-shadow:
+                0 7px 0
+                #c76884;
+
+            transition:
+                .2s;
+
+        }
+
+
+        .scroll-btn:hover {
+
+            transform:
+                translateY(3px);
+
+            box-shadow:
+                0 4px 0
+                #c76884;
+
+        }
+
+
+        /* ==================================================
+           CAKE
+        ================================================== */
+
+        .cake-wrapper {
+
+            margin:
+                55px auto 0;
+
+            position:
+                relative;
+
+            width:
+                190px;
+
+            height:
+                180px;
+
+            animation:
+                cakeBounce
+                3s
+                ease-in-out
+                infinite;
+
+        }
+
+
+        .cake {
+
+            position:
+                absolute;
+
+            bottom:
+                15px;
+
+            left:
+                10px;
+
+            width:
+                170px;
+
+            height:
+                90px;
+
+            background:
+                #f7bfd0;
+
+            border-radius:
+                15px 15px 25px 25px;
+
+            box-shadow:
+                inset 0 -12px
+                rgba(0,0,0,.05);
+
+        }
+
+
+        .cake::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            top:
+                20px;
+
+            left:
+                0;
+
+            width:
+                100%;
+
+            height:
+                25px;
+
+            background:
+                #fff0f5;
+
+            border-radius:
+                50%;
+
+        }
+
+
+        .cake::after {
+
+            content:
+                "23";
+
+            position:
+                absolute;
+
+            top:
+                42px;
+
+            left:
+                50%;
+
+            transform:
+                translateX(-50%);
+
+            font-family:
+                'Fredoka',
+                sans-serif;
+
+            font-size:
+                27px;
+
+            font-weight:
+                700;
+
+            color:
+                white;
+
+        }
+
+
+        .candle {
+
+            position:
+                absolute;
+
+            bottom:
+                100px;
+
+            width:
+                12px;
+
+            height:
+                45px;
+
+            background:
+                repeating-linear-gradient(
+                    45deg,
+                    #fff,
+                    #fff 5px,
+                    #e8a2bb 5px,
+                    #e8a2bb 10px
+                );
+
+            border-radius:
+                4px;
+
+        }
+
+
+        .candle:nth-child(1) {
+
+            left:
+                55px;
+
+        }
+
+
+        .candle:nth-child(2) {
+
+            left:
+                89px;
+
+        }
+
+
+        .candle:nth-child(3) {
+
+            left:
+                123px;
+
+        }
+
+
+        .flame {
+
+            position:
+                absolute;
+
+            width:
+                16px;
+
+            height:
+                22px;
+
+            background:
+                #ffd85d;
+
+            border-radius:
+                50% 50% 50% 0;
+
+            transform:
+                rotate(-45deg);
+
+            bottom:
+                140px;
+
+            animation:
+                flame
+                .8s
+                infinite
+                alternate;
+
+        }
+
+
+        .flame:nth-child(4) {
+
+            left:
+                53px;
+
+        }
+
+
+        .flame:nth-child(5) {
+
+            left:
+                87px;
+
+        }
+
+
+        .flame:nth-child(6) {
+
+            left:
+                121px;
+
+        }
+
+
+        @keyframes flame {
+
+            from {
+
+                transform:
+                    rotate(-45deg)
+                    scale(1);
+
+            }
+
+            to {
+
+                transform:
+                    rotate(-45deg)
+                    scale(.75);
+
+            }
+
+        }
+
+
+        @keyframes cakeBounce {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0);
+
+            }
+
+            50% {
+
+                transform:
+                    translateY(-8px);
+
+            }
+
+        }
+
+
+        /* ==================================================
+           SECTION
+        ================================================== */
+
+        section {
+
+            position:
+                relative;
+
+            z-index:
+                2;
+
+            padding:
+                100px 7%;
+
+        }
+
+
+        .section-title {
+
+            text-align:
+                center;
+
+            margin-bottom:
+                50px;
+
+        }
+
+
+        .section-title .emoji {
+
+            font-size:
+                30px;
+
+        }
+
+
+        .section-title small {
+
+            display:
+                block;
+
+            color:
+                var(--pink-dark);
+
+            font-size:
+                12px;
+
+            letter-spacing:
+                2px;
+
+            text-transform:
+                uppercase;
+
+        }
+
+
+        .section-title h2 {
+
+            font-family:
+                'Fredoka',
+                sans-serif;
+
+            color:
+                var(--brown);
+
+            font-size:
+                clamp(34px,6vw,55px);
+
+            margin-top:
+                5px;
+
+        }
+
+
+        /* ==================================================
+           LETTER
+        ================================================== */
+
+        .letter-section {
+
+            background:
+                white;
+
+        }
+
+
+        .letter {
+
+            max-width:
+                850px;
+
+            margin:
+                auto;
+
+            background:
+                #fff7fa;
+
+            border:
+                3px dashed
+                #efc0d0;
+
+            border-radius:
+                30px;
+
+            padding:
+                clamp(30px,6vw,60px);
+
+            position:
+                relative;
+
+            box-shadow:
+                0 20px 50px
+                rgba(140,80,110,.08);
+
+        }
+
+
+        .letter-decoration {
+
+            position:
+                absolute;
+
+            font-size:
+                35px;
+
+        }
+
+
+        .decoration-one {
+
+            top:
+                15px;
+
+            right:
+                20px;
+
+        }
+
+
+        .decoration-two {
+
+            bottom:
+                15px;
+
+            left:
+                20px;
+
+        }
+
+
+        .letter h3 {
+
+            font-family:
+                'Fredoka',
+                sans-serif;
+
+            color:
+                var(--pink-dark);
+
+            font-size:
+                28px;
+
+            margin-bottom:
+                25px;
+
+        }
+
+
+        .letter p {
+
+            font-size:
+                14px;
+
+            line-height:
+                2;
+
+            margin-bottom:
+                18px;
+
+            color:
+                #685a65;
+
+        }
+
+
+        .signature {
+
+            margin-top:
+                35px;
+
+            text-align:
+                right;
+
+            font-family:
+                'Fredoka',
+                sans-serif;
+
+            color:
+                var(--purple-dark);
+
+            font-size:
+                20px;
+
+        }
+
+
+        /* ==================================================
+           PHOTO GALLERY
+        ================================================== */
+
+        .gallery-section {
+
+            background:
+                #fff5f8;
+
+        }
+
+
+        .gallery {
+
+            max-width:
+                1050px;
+
+            margin:
+                auto;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                18px;
+
+        }
+
+
+        .photo {
+
+            position:
+                relative;
+
+            height:
+                380px;
+
+            overflow:
+                hidden;
+
+            border-radius:
+                25px;
+
+            background:
+                #f5e4eb;
+
+            border:
+                6px solid white;
+
+            box-shadow:
+                0 10px 30px
+                rgba(110,70,90,.12);
+
+            transform:
+                rotate(-1deg);
+
+            transition:
+                .35s;
+
+        }
+
+
+        .photo:nth-child(2) {
+
+            transform:
+                rotate(2deg);
+
+            height:
+                430px;
+
+            margin-top:
+                -25px;
+
+        }
+
+
+        .photo:nth-child(3) {
+
+            transform:
+                rotate(-2deg);
+
+        }
+
+
+        .photo:nth-child(4) {
+
+            transform:
+                rotate(2deg);
+
+            height:
+                320px;
+
+        }
+
+
+        .photo:nth-child(5) {
+
+            transform:
+                rotate(-2deg);
+
+            height:
+                320px;
+
+        }
+
+
+        .photo:hover {
+
+            transform:
+                rotate(0)
+                scale(1.03);
+
+            z-index:
+                10;
+
+        }
+
+
+        .photo img {
+
+            width:
+                100%;
+
+            height:
+                100%;
+
+            object-fit:
+                cover;
+
+        }
+
+
+        .photo::after {
+
+            content:
+                "♡";
+
+            position:
+                absolute;
+
+            right:
+                15px;
+
+            bottom:
+                10px;
+
+            color:
+                white;
+
+            font-size:
+                30px;
+
+            text-shadow:
+                0 2px 8px
+                rgba(0,0,0,.4);
+
+        }
+
+
+        .photo-placeholder {
+
+            height:
+                100%;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            text-align:
+                center;
+
+            padding:
+                20px;
+
+            color:
+                #a27d91;
+
+            font-size:
+                12px;
+
+        }
+
+
+        /* ==================================================
+           AGE
+        ================================================== */
+
+        .age-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f4eafa,
+                    #ffe7ef
+                );
+
+            text-align:
+                center;
+
+        }
+
+
+        .age-number {
+
+            font-family:
+                'Fredoka',
+                sans-serif;
+
+            font-size:
+                clamp(130px,25vw,250px);
+
+            line-height:
+                .7;
+
+            color:
+                var(--pink-dark);
+
+            text-shadow:
+                7px 7px 0
+                white;
+
+        }
+
+
+        .age-section p {
+
+            max-width:
+                650px;
+
+            margin:
+                40px auto 0;
+
+            line-height:
+                1.9;
+
+            font-size:
+                14px;
+
+        }
+
+
+        /* ==================================================
+           WISH CARDS
+        ================================================== */
+
+        .wishes-section {
+
+            background:
+                white;
+
+        }
+
+
+        .wishes {
+
+            max-width:
+                1000px;
+
+            margin:
+                auto;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                20px;
+
+        }
+
+
+        .wish {
+
+            padding:
+                35px 25px;
+
+            text-align:
+                center;
+
+            border-radius:
+                25px;
+
+            background:
+                #fff8fb;
+
+            border:
+                2px solid
+                #f5dce6;
+
+            transition:
+                .3s;
+
+        }
+
+
+        .wish:nth-child(2) {
+
+            background:
+                #f9f3fd;
+
+            border-color:
+                #e5d6ef;
+
+        }
+
+
+        .wish:nth-child(3) {
+
+            background:
+                #fff9e8;
+
+            border-color:
+                #f5e5ae;
+
+        }
+
+
+        .wish:hover {
+
+            transform:
+                translateY(-8px);
+
+        }
+
+
+        .wish .icon {
+
+            font-size:
+                38px;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        .wish h3 {
+
+            font-family:
+                'Fredoka',
+                sans-serif;
+
+            font-size:
+                25px;
+
+            margin-bottom:
+                10px;
+
+            color:
+                var(--brown);
+
+        }
+
+
+        .wish p {
+
+            font-size:
+                12px;
+
+            line-height:
+                1.8;
+
+        }
+
+
+        /* ==================================================
+           GIFT
+        ================================================== */
+
+        .gift-section {
+
+            background:
+                #fff3f7;
+
+            text-align:
+                center;
+
+        }
+
+
+        .gift {
+
+            font-size:
+                100px;
+
+            cursor:
+                pointer;
+
+            display:
+                inline-block;
+
+            animation:
+                giftShake
+                1.2s
+                infinite;
+
+        }
+
+
+        @keyframes giftShake {
+
+            0%,
+            100% {
+
+                transform:
+                    rotate(0);
+
+            }
+
+            25% {
+
+                transform:
+                    rotate(-7deg);
+
+            }
+
+            75% {
+
+                transform:
+                    rotate(7deg);
+
+            }
+
+        }
+
+
+        .gift-button {
+
+            display:
+                block;
+
+            margin:
+                25px auto 0;
+
+            border:
+                none;
+
+            background:
+                var(--pink-dark);
+
+            color:
+                white;
+
+            padding:
+                14px 30px;
+
+            border-radius:
+                50px;
+
+            font-family:
+                'Baloo 2',
+                cursive;
+
+            font-size:
+                16px;
+
+            font-weight:
+                600;
+
+            cursor:
+                pointer;
+
+            box-shadow:
+                0 6px 0
+                #c76884;
+
+            transition:
+                .2s;
+
+        }
+
+
+        .gift-button:active {
+
+            transform:
+                translateY(4px);
+
+            box-shadow:
+                0 2px 0
+                #c76884;
+
+        }
+
+
+        .surprise {
+
+            max-width:
+                650px;
+
+            margin:
+                30px auto 0;
+
+            padding:
+                35px;
+
+            border-radius:
+                25px;
+
+            background:
+                white;
+
+            border:
+                3px dashed
+                #efb5c8;
+
+            display:
+                none;
+
+            animation:
+                reveal
+                .7s ease;
+
+        }
+
+
+        .surprise.show {
+
+            display:
+                block;
+
+        }
+
+
+        .surprise h3 {
+
+            font-family:
+                'Fredoka',
+                sans-serif;
+
+            color:
+                var(--pink-dark);
+
+            font-size:
+                30px;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        .surprise p {
+
+            font-size:
+                14px;
+
+            line-height:
+                1.9;
+
+        }
+
+
+        @keyframes reveal {
+
+            from {
+
+                opacity:
+                    0;
+
+                transform:
+                    translateY(20px)
+                    scale(.96);
+
+            }
+
+            to {
+
+                opacity:
+                    1;
+
+                transform:
+                    translateY(0)
+                    scale(1);
+
+            }
+
+        }
+
+
+        /* ==================================================
+           FOOTER
+        ================================================== */
+
+        footer {
+
+            background:
+                #72586b;
+
+            color:
+                white;
+
+            text-align:
+                center;
+
+            padding:
+                50px 20px;
+
+            position:
+                relative;
+
+            z-index:
+                2;
+
+        }
+
+
+        .footer-cake {
+
+            font-size:
+                38px;
+
+            margin-bottom:
+                10px;
+
+        }
+
+
+        footer p {
+
+            font-size:
+                12px;
+
+            line-height:
+                1.8;
+
+        }
+
+
+        /* ==================================================
+           CONFETTI
+        ================================================== */
+
+        .confetti {
+
+            position:
+                fixed;
+
+            top:
+                -20px;
+
+            z-index:
+                99999;
+
+            pointer-events:
+                none;
+
+            animation:
+                fall
+                3.5s
+                linear
+                forwards;
+
+        }
+
+
+        @keyframes fall {
+
+            to {
+
+                transform:
+                    translateY(110vh)
+                    rotate(720deg);
+
+                opacity:
+                    0;
+
+            }
+
+        }
+
+
+        /* ==================================================
+           RESPONSIVE
+        ================================================== */
+
+        @media(max-width:750px) {
+
+
+            .balloon {
+
+                width:
+                    50px;
+
+                height:
+                    63px;
+
+            }
+
+
+            .balloon-pink {
+
+                left:
+                    3%;
+
+            }
+
+
+            .balloon-purple {
+
+                right:
+                    3%;
+
+            }
+
+
+            .balloon-yellow {
+
+                left:
+                    5%;
+
+            }
+
+
+            .balloon-blue {
+
+                right:
+                    5%;
+
+            }
+
+
+            .gallery {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+
+            }
+
+
+            .photo,
+            .photo:nth-child(2),
+            .photo:nth-child(4),
+            .photo:nth-child(5) {
+
+                height:
+                    260px;
+
+                margin-top:
+                    0;
+
+            }
+
+
+            .photo:nth-child(3) {
+
+                grid-column:
+                    span 2;
+
+            }
+
+
+            .wishes {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .cake-wrapper {
+
+                transform:
+                    scale(.85);
+
+            }
+
+
+        }
+
+
+        @media(max-width:430px) {
+
+
+            .hero h1 {
+
+                font-size:
+                    57px;
+
+            }
+
+
+            .hero-description {
+
+                font-size:
+                    13px;
+
+            }
+
+
+            .gallery {
+
+                gap:
+                    10px;
+
+            }
+
+
+            .photo,
+            .photo:nth-child(2),
+            .photo:nth-child(4),
+            .photo:nth-child(5) {
+
+                height:
+                    220px;
+
+            }
+
+
+            .cake-wrapper {
+
+                margin-top:
+                    35px;
+
+            }
+
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         LOADING
+    ================================================== -->
+
+    <div id="loader">
+
+        <div class="loader-cake">
+            🎂
+        </div>
+
+        <div class="loader-text">
+            preparing something special... ♡
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         FLOATING DECORATION
+    ================================================== -->
+
+    <div
+        class="floating-decoration"
+        id="floatingDecoration">
+    </div>
+
+
+
+    <!-- ==================================================
+         NAVBAR
+    ================================================== -->
+
+    <nav>
+
+        <div class="logo">
+            🎈 for cintaku
+        </div>
+
+        <button
+            class="music-btn"
+            id="musicBtn">
+
+            ♫
+
+        </button>
+
+    </nav>
+
+
+
+    <!-- ==================================================
+         HERO
+    ================================================== -->
+
+    <section class="hero">
+
+
+        <!-- BALLOONS -->
+
+        <div class="balloon balloon-pink"></div>
+
+        <div class="balloon balloon-purple"></div>
+
+        <div class="balloon balloon-yellow"></div>
+
+        <div class="balloon balloon-blue"></div>
+
+
+
+        <div class="hero-content">
+
+
+            <div class="party-label">
+
+                🎉 it's your special day! 🎉
+
+            </div>
+
+
+            <h1>
+
+                Happy Birthday
+
+                <span>
+                    Sayang ♡
+                </span>
+
+            </h1>
+
+
+            <div class="hero-age">
+
+                🎂 23 YEARS OLD 🎂
+
+            </div>
+
+
+            <p class="hero-description">
+
+                Hari ini seseorang yang spesial
+                sedang bertambah satu tahun lagi.
+
+                Jadi hari ini harus ada kue,
+                balon, tawa, dan tentunya
+                banyak doa baik untuk Mamas. 💕
+
+            </p>
+
+
+
+            <!-- CAKE -->
+
+            <div class="cake-wrapper">
+
+                <div class="cake"></div>
+
+
+                <div class="candle"></div>
+
+                <div class="candle"></div>
+
+                <div class="candle"></div>
+
+
+                <div class="flame"></div>
+
+                <div class="flame"></div>
+
+                <div class="flame"></div>
+
+            </div>
+
+
+
+            <a
+                href="#letter"
+                class="scroll-btn">
+
+                buka ucapan yuk 🎁
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         LETTER
+    ================================================== -->
+
+    <section
+        class="letter-section"
+        id="letter">
+
+
+        <div class="section-title">
+
+            <div class="emoji">
+                💌
+            </div>
+
+            <small>
+                a little letter for you
+            </small>
+
+            <h2>
+                Untuk Sayangku
+            </h2>
+
+        </div>
+
+
+
+        <div class="letter">
+
+
+            <div
+                class="letter-decoration decoration-one">
+
+                🎈
+
+            </div>
+
+
+            <div
+                class="letter-decoration decoration-two">
+
+                🎀
+
+            </div>
+
+
+            <h3>
+
+                Happy 23rd Birthday, Mamas! 🎂
+
+            </h3>
+
+
+            <p>
+
+                Selamat ulang tahun untuk sayang ade
+                yang hari ini resmi berusia 23 tahun. 🤍
+
+                Hari ini bukan cuma tentang bertambahnya
+                satu angka, tapi tentang merayakan
+                seseorang yang begitu berarti.
+
+            </p>
+
+
+            <p>
+
+                Semoga di umur yang baru ini,
+                Mamas semakin dekat dengan semua
+                hal yang selama ini Mamas impikan.
+
+                Semoga semua yang sedang diperjuangkan
+                perlahan menemukan jalannya,
+                dan semua doa yang pernah dipanjatkan
+                diam-diam mendapatkan jawabannya
+                di waktu yang paling tepat.
+
+            </p>
+
+
+            <p>
+
+                Aku berharap tahun ini akan membawa
+                lebih banyak alasan untuk Mamas tersenyum.
+
+                Lebih banyak hari yang menyenangkan,
+                lebih banyak kabar baik,
+                lebih banyak kesempatan,
+                dan tentunya lebih banyak momen
+                yang bisa membuat Mamas berkata,
+
+                "ternyata hidup seindah ini."
+
+            </p>
+
+
+            <p>
+
+                Kalau nanti ada hari yang terasa berat,
+                jangan terlalu keras sama diri sendiri ya.
+
+                Mamas nggak harus selalu kuat setiap waktu.
+
+                Boleh istirahat.
+                Boleh bingung.
+                Boleh pelan-pelan.
+
+                Yang penting jangan berhenti percaya
+                bahwa akan selalu ada hari yang lebih baik.
+
+            </p>
+
+
+            <p>
+
+                Terima kasih untuk semua hal kecil
+                yang mungkin Mamas sendiri nggak sadar
+                ternyata berarti.
+
+                Terima kasih untuk perhatian,
+                cerita, tawa, dan setiap momen
+                yang akhirnya menjadi kenangan
+                yang indah untuk diingat.
+
+            </p>
+
+
+            <p>
+
+                Di usia 23 ini,
+                aku cuma punya satu harapan besar:
+
+                semoga Mamas bahagia.
+
+                Bukan cuma hari ini karena ulang tahun,
+                tapi juga besok, lusa, minggu depan,
+                bulan depan, dan di hari-hari
+                yang bahkan belum kita tahu akan seperti apa.
+
+            </p>
+
+
+            <p>
+
+                Selamat memasuki chapter baru, My Love.
+
+                Semoga umur 23 menjadi awal
+                dari banyak cerita indah.
+
+                Semoga langkah Mamas selalu dipermudah,
+                rezeki dilancarkan,
+                kesehatan dijaga,
+                hati ditenangkan,
+                dan senyum Mamas selalu punya alasan
+                untuk tetap ada.
+
+            </p>
+
+
+            <p>
+
+                Once again...
+
+                <strong>
+                    Happy Birthday, Mamas! 🎂🎈
+                </strong>
+
+                <br>
+
+                Semoga semua hal baik menemukan jalannya
+                untuk sampai kepada Mamas. ♡
+
+            </p>
+
+
+            <div class="signature">
+
+                with lots of love,
+
+                <br>
+
+                someone who wishes
+                you happiness always honey ♡
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         GALLERY
+    ================================================== -->
+
+    <section class="gallery-section">
+
+
+        <div class="section-title">
+
+            <div class="emoji">
+                📸
+            </div>
+
+            <small>
+                birthday boy memories
+            </small>
+
+            <h2>
+                Little Memories
+            </h2>
+
+        </div>
+
+
+
+        <div class="gallery">
+
+
+            <!-- FOTO 1 -->
+
+            <div class="photo">
+
+                <img
+                    src="img/mamas1.jpeg"
+                    alt="Foto Mamas 1"
+                    onerror="
+                    this.style.display='none';
+                    this.nextElementSibling.style.display='flex';
+                    "
+                >
+
+
+                <div
+                    class="photo-placeholder"
+                    style="display:none;">
+
+                    📷
+
+                    <br>
+
+                    Masukkan foto:
+
+                    <br>
+
+                    <strong>
+                        img/mamas1.jpeg
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOTO 2 -->
+
+            <div class="photo">
+
+                <img
+                    src="img/mamas2.jpeg"
+                    alt="Foto Mamas 2"
+                    onerror="
+                    this.style.display='none';
+                    this.nextElementSibling.style.display='flex';
+                    "
+                >
+
+
+                <div
+                    class="photo-placeholder"
+                    style="display:none;">
+
+                    📷
+
+                    <br>
+
+                    Masukkan foto:
+
+                    <br>
+
+                    <strong>
+                        img/mamas2.jpeg
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOTO 3 -->
+
+            <div class="photo">
+
+                <img
+                    src="img/mamas3.jpeg"
+                    alt="Foto Mamas 3"
+                    onerror="
+                    this.style.display='none';
+                    this.nextElementSibling.style.display='flex';
+                    "
+                >
+
+
+                <div
+                    class="photo-placeholder"
+                    style="display:none;">
+
+                    📷
+
+                    <br>
+
+                    Masukkan foto:
+
+                    <br>
+
+                    <strong>
+                        img/mamas3.jpeg
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOTO 4 -->
+
+            <div class="photo">
+
+                <img
+                    src="img/mamas4.jpeg"
+                    alt="Foto Mamas 4"
+                    onerror="
+                    this.style.display='none';
+                    this.nextElementSibling.style.display='flex';
+                    "
+                >
+
+
+                <div
+                    class="photo-placeholder"
+                    style="display:none;">
+
+                    📷
+
+                    <br>
+
+                    Masukkan foto:
+
+                    <br>
+
+                    <strong>
+                        img/mamas4.jpeg
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOTO 5 -->
+
+            <div class="photo">
+
+                <img
+                    src="img/mamas5.jpeg"
+                    alt="Foto Mamas 5"
+                    onerror="
+                    this.style.display='none';
+                    this.nextElementSibling.style.display='flex';
+                    "
+                >
+
+
+                <div
+                    class="photo-placeholder"
+                    style="display:none;">
+
+                    📷
+
+                    <br>
+
+                    Masukkan foto:
+
+                    <br>
+
+                    <strong>
+                        img/mamas5.jpeg
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         AGE 23
+    ================================================== -->
+
+    <section class="age-section">
+
+
+        <div class="section-title">
+
+            <div class="emoji">
+                ✨
+            </div>
+
+            <small>
+                welcome to
+            </small>
+
+            <h2>
+                Chapter 23
+            </h2>
+
+        </div>
+
+
+        <div class="age-number">
+            23
+        </div>
+
+
+        <p>
+
+            Dua puluh dua tahun.
+
+            <br><br>
+
+            Dua puluh dua tahun penuh cerita,
+            pengalaman, tawa, perjuangan,
+            keberhasilan, kegagalan,
+            dan banyak hal yang akhirnya
+            membuat Mamas menjadi Mamas
+            yang sekarang.
+
+            <br><br>
+
+            Dan cerita itu masih panjang.
+
+            Masih banyak tempat yang belum dikunjungi,
+            mimpi yang belum diwujudkan,
+            makanan yang belum dicoba,
+            foto yang belum diambil,
+            dan kenangan yang belum dibuat.
+
+            <br><br>
+
+            So...
+
+            here's to 23. 🥂
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         WISHES
+    ================================================== -->
+
+    <section class="wishes-section">
+
+
+        <div class="section-title">
+
+            <div class="emoji">
+                🎁
+            </div>
+
+            <small>
+                birthday wishes
+            </small>
+
+            <h2>
+                My Little Wishes
+            </h2>
+
+        </div>
+
+
+
+        <div class="wishes">
+
+
+            <div class="wish">
+
+                <div class="icon">
+                    💕
+                </div>
+
+                <h3>
+                    Bahagia
+                </h3>
+
+                <p>
+
+                    Semoga Mamas selalu punya
+                    banyak alasan untuk tersenyum.
+
+                    Bahkan dari hal-hal kecil
+                    yang sering kali tidak disadari.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="wish">
+
+                <div class="icon">
+                    🌟
+                </div>
+
+                <h3>
+                    Berhasil
+                </h3>
+
+                <p>
+
+                    Semoga semua usaha yang Mamas
+                    lakukan membawa Mamas
+                    semakin dekat dengan
+                    impian yang selama ini dikejar.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="wish">
+
+                <div class="icon">
+                    🌷
+                </div>
+
+                <h3>
+                    Tenang
+                </h3>
+
+                <p>
+
+                    Semoga hati Mamas selalu tenang,
+                    langkahnya selalu dipermudah,
+                    dan hidupnya dipenuhi
+                    orang-orang yang tulus.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         GIFT SURPRISE
+    ================================================== -->
+
+    <section class="gift-section">
+
+
+        <div class="section-title">
+
+            <div class="emoji">
+                🎁
+            </div>
+
+            <small>
+                wait... there's more!
+            </small>
+
+            <h2>
+                One More Surprise
+            </h2>
+
+        </div>
+
+
+
+        <div
+            class="gift"
+            id="gift">
+
+            🎁
+
+        </div>
+
+
+
+        <button
+            class="gift-button"
+            id="giftButton">
+
+            buka hadiahnya 🎀
+
+        </button>
+
+
+
+        <div
+            class="surprise"
+            id="surprise">
+
+
+            <h3>
+
+                Surprise! 🎉
+
+            </h3>
+
+
+            <p>
+
+                Kalau sampai bagian ini,
+                berarti Mamas sudah melihat
+                hampir seluruh isi website ini.
+
+                <br><br>
+
+                Tapi sebenarnya ada satu hal
+                yang paling penting:
+
+                <br><br>
+
+                <strong>
+                    Mamas harus bahagia.
+                </strong>
+
+                <br><br>
+
+                Bukan cuma karena hari ini ulang tahun,
+                tapi karena Mamas memang pantas
+                mendapatkan banyak hal baik.
+
+                <br><br>
+
+                Jadi...
+
+                jangan lupa senyum hari ini ya. 🤍
+
+                <br><br>
+
+                🎂 Happy 23rd Birthday, Mamas! 🎂
+
+                <br>
+
+                May this year be soft,
+                kind, beautiful,
+                and full of wonderful surprises.
+
+                ♡
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+
+        <div class="footer-cake">
+            🎂🎈🎁
+        </div>
+
+
+        <p>
+
+            Made especially for
+
+            <strong>
+                Mamas
+            </strong>
+
+            ♡
+
+            <br>
+
+            Happy 23rd Birthday
+
+            <br>
+
+            2026
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         MUSIC
+    ================================================== -->
+
+    <audio
+        id="music"
+        loop>
+
+        <source
+            src="music/Sal Priadi - Serta Mulia (Official Lyric Video).mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script>
+
+
+        /* ================================================
+           LOADING
+        ================================================= */
+
+        window.addEventListener(
+            "load",
+            function() {
+
+                setTimeout(
+                    function() {
+
+                        document
+                            .getElementById("loader")
+                            .classList
+                            .add("hide");
+
+                    },
+                    1000
+                );
+
+            }
+        );
+
+
+
+        /* ================================================
+           FLOATING DECORATION
+        ================================================= */
+
+        const decoration =
+            document.getElementById(
+                "floatingDecoration"
+            );
+
+
+        const decorations = [
+
+            "♡",
+            "♥",
+            "✦",
+            "✧",
+            "🎈",
+            "✨",
+            "💕"
+
+        ];
+
+
+        for (
+            let i = 0;
+            i < 25;
+            i++
+        ) {
+
+
+            const item =
+                document.createElement(
+                    "div"
+                );
+
+
+            item.className =
+                "floating";
+
+
+            item.innerHTML =
+                decorations[
+                    Math.floor(
+                        Math.random()
+                        * decorations.length
+                    )
+                ];
+
+
+            item.style.left =
+                Math.random()
+                * 100
+                + "%";
+
+
+            item.style.fontSize =
+                (
+                    12 +
+                    Math.random()
+                    * 22
+                )
+                + "px";
+
+
+            item.style.animationDuration =
+                (
+                    8 +
+                    Math.random()
+                    * 10
+                )
+                + "s";
+
+
+            item.style.animationDelay =
+                (
+                    Math.random()
+                    * 10
+                )
+                + "s";
+
+
+            decoration.appendChild(
+                item
+            );
+
+        }
+
+
+
+        /* ================================================
+           MUSIC
+        ================================================= */
+
+        const music =
+            document.getElementById(
+                "music"
+            );
+
+
+        const musicBtn =
+            document.getElementById(
+                "musicBtn"
+            );
+
+
+        let playing =
+            false;
+
+
+        musicBtn.addEventListener(
+            "click",
+            function() {
+
+
+                if (!playing) {
+
+
+                    music.play()
+
+                        .then(
+                            function() {
+
+                                playing =
+                                    true;
+
+                                musicBtn.innerHTML =
+                                    "❚❚";
+
+                            }
+                        )
+
+                        .catch(
+                            function() {
+
+                                alert(
+                                    "Masukkan file birthday.mp3 ke folder music terlebih dahulu ya 🎵"
+                                );
+
+                            }
+                        );
+
+
+                }
+
+                else {
+
+
+                    music.pause();
+
+                    playing =
+                        false;
+
+                    musicBtn.innerHTML =
+                        "♫";
+
+                }
+
+
+            }
+        );
+
+
+
+        /* ================================================
+           GIFT
+        ================================================= */
+
+        const giftButton =
+            document.getElementById(
+                "giftButton"
+            );
+
+
+        const gift =
+            document.getElementById(
+                "gift"
+            );
+
+
+        const surprise =
+            document.getElementById(
+                "surprise"
+            );
+
+
+        giftButton.addEventListener(
+            "click",
+            function() {
+
+
+                surprise.classList.add(
+                    "show"
+                );
+
+
+                gift.innerHTML =
+                    "🎉";
+
+
+                giftButton.innerHTML =
+                    "♡ Happy Birthday Mamas ♡";
+
+
+                createConfetti();
+
+
+            }
+        );
+
+
+
+        gift.addEventListener(
+            "click",
+            function() {
+
+                surprise.classList.add(
+                    "show"
+                );
+
+                gift.innerHTML =
+                    "🎉";
+
+                createConfetti();
+
+            }
+        );
+
+
+
+        /* ================================================
+           CONFETTI
+        ================================================= */
+
+        function createConfetti() {
+
+
+            const confettiSymbols = [
+
+                "🎉",
+                "✨",
+                "💕",
+                "🎈",
+                "⭐",
+                "♡",
+                "🎊"
+
+            ];
+
+
+            for (
+                let i = 0;
+                i < 80;
+                i++
+            ) {
+
+
+                const confetti =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                confetti.className =
+                    "confetti";
+
+
+                confetti.innerHTML =
+                    confettiSymbols[
+                        Math.floor(
+                            Math.random()
+                            *
+                            confettiSymbols.length
+                        )
+                    ];
+
+
+                confetti.style.left =
+                    Math.random()
+                    * 100
+                    + "vw";
+
+
+                confetti.style.fontSize =
+                    (
+                        10 +
+                        Math.random()
+                        * 18
+                    )
+                    + "px";
+
+
+                confetti.style.animationDelay =
+                    Math.random()
+                    * .8
+                    + "s";
+
+
+                document.body.appendChild(
+                    confetti
+                );
+
+
+                setTimeout(
+                    function() {
+
+                        confetti.remove();
+
+                    },
+                    4500
+                );
+
+            }
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
